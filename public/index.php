@@ -15,6 +15,8 @@ $router = new \App\Core\Router($_SERVER['REQUEST_URI']);
 $router->get('/', 'HomeController@index');
 $router->get('/chansons', 'ChansonController@index');
 $router->get('/chanson/ajouter', 'ChansonController@displayAddForm');
+$router->get('/chanson/chercher', 'ChansonController@search');
+$router->get('/chanteur/chercher', 'ChanteurController@search');
 
 // Exécution du routeur pour traiter la requête
 $router->run();

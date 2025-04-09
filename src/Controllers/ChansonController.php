@@ -2,10 +2,15 @@
 namespace App\Controllers;
 
 use App\Core\BaseController;
+use App\Core\EntityManager;
 
 class ChansonController extends BaseController {
     public function index() {
-        $this->display('chansons');
+        $entityManager = new EntityManager();
+        $chansons = $entityManager->findAll("chanson", "id_chanson");
+        $chanteurs = $entityManager->findAll("chanteur", "id_chanteur");
+
+        $this->display('chansons', ["chansons" => $chansons, "chanteurs" => $chanteurs]);
     }
 
     public function displayAddForm() {
