@@ -13,6 +13,8 @@ $router = new \App\Core\Router($_SERVER['REQUEST_URI']);
 
 // Définition des routes
 $router->get('/', 'HomeController@index');
+$router->get('/chansons', 'ChansonController@index');
+$router->get('/chanson/ajouter', 'ChansonController@displayAddForm');
 
 // Exécution du routeur pour traiter la requête
 $router->run();
