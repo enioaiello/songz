@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon site MVC</title>
+    <title>Songz</title>
     <link rel="stylesheet" href="<?= assets('css/style.css') ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="icon" href="<?= assets('images/favicon.png') ?>">
 </head>
 <body>
 <header class="header">

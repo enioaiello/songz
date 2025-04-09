@@ -17,6 +17,7 @@ $router->get('/chansons', 'ChansonController@index');
 $router->get('/chanson/ajouter', 'ChansonController@displayAddForm');
 $router->get('/chanson/chercher', 'ChansonController@search');
 $router->get('/chanteur/chercher', 'ChanteurController@search');
+$router->get('/chanson/store', 'ChanteurController@store');
 
 // Exécution du routeur pour traiter la requête
 $router->run();

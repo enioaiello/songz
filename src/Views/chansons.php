@@ -4,9 +4,6 @@
             <label>
                 <input type="text" name="titre" id="titre" placeholder="Rechercher un titre">
             </label>
-            <input type="submit" value="Recherche">
-        </form>
-        <form action="/chansons" method="POST">
             <label>
                 <input type="text" name="chanteur" id="chanteur" placeholder="Rechercher un chanteur">
             </label>
