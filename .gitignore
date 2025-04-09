@@ -1,0 +1,19 @@
+# Fichiers IDE
+.idea/
+.vscode/
+*.swp
+
+# Fichiers de configuration
+.env
+
+# Système
+.DS_Store
+
+# Composer
+/vendor/
+
+# Node.js
+/node_modules/
+
+# Docker
+docker-compose.override.yml
