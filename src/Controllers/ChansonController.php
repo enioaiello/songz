@@ -30,7 +30,7 @@ class ChansonController extends BaseController {
             "id_categorie" => $_POST["genre"]
         ];
         var_dump($chanson);
-        $this->display('test');
+        $this->display('test', ["chanson" => $chanson]);
 //        $entityManager->insert("chanson", $_POST);
     }
 }
