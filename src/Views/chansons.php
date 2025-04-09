@@ -29,7 +29,7 @@
            <div class='body'>
                <ul>
                     <li>
-                        De " . $chanson["id_chanteur"] . "
+                        De " . $chanson["nom_chanteur"] . "
                     </li>
                     <li>
                         Publié le $date

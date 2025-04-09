@@ -7,10 +7,10 @@ use App\Core\EntityManager;
 class ChansonController extends BaseController {
     public function index() {
         $entityManager = new EntityManager();
-        $chansons = $entityManager->findAll("chanson", "id_chanson");
-        $chanteurs = $entityManager->findAll("chanteur", "id_chanteur");
+//        $chansons = $entityManager->findAll("chanson", "id_chanson");
+        $chansons = $entityManager->query("SELECT * FROM chanteur INNER JOIN chanson ON chanteur.id_chanteur = chanson.id_chanteur;");
 
-        $this->display('chansons', ["chansons" => $chansons, "chanteurs" => $chanteurs]);
+        $this->display('chansons', ["chansons" => $chansons]);
     }
 
     public function displayAddForm() {
