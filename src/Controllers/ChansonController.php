@@ -21,7 +21,8 @@ class ChansonController extends BaseController {
 
     public function store() {
         $entityManager = new EntityManager();
-        $chanteur = $entityManager->findOne("chanteur", "id_chanteur", "nom_chanteur");
+//        $chanteur = $entityManager->findOne("chanteur", "id_chanteur", $chanteur);
+        $chanteur = 1;
         $chanson = [
             "titre" => $_POST["titre"],
             "date" => $_POST["date"],
@@ -29,6 +30,7 @@ class ChansonController extends BaseController {
             "id_categorie" => $_POST["genre"]
         ];
         var_dump($chanson);
+        $this->display('test');
 //        $entityManager->insert("chanson", $_POST);
     }
 }
